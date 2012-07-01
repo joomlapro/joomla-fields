@@ -1,12 +1,12 @@
 <?php
 /**
- * @package		Products
- * @subpackage	com_products
- * @copyright	Copyright (C) AtomTech, Inc. All rights reserved.
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     Products
+ * @subpackage  com_products
+ * @copyright   Copyright (C) 2012 AtomTech, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
+// No direct access
 defined('_JEXEC') or die;
 
 JFormHelper::loadFieldClass('list');
@@ -14,9 +14,9 @@ JFormHelper::loadFieldClass('list');
 /**
  * Form Field ZipCode class.
  *
- * @package		Products
- * @subpackage	com_products
- * @since		2.5
+ * @package     Products
+ * @subpackage  com_products
+ * @since       2.5
  */
 class JFormFieldZipCode extends JFormFieldText
 {
@@ -30,8 +30,9 @@ class JFormFieldZipCode extends JFormFieldText
 	/**
 	 * Method to get the field input.
 	 *
-	 * @return	string		The field input.
-	 * @since	2.5
+	 * @return  string The field input.
+	 * 
+	 * @since   2.5
 	 */
 	public function getInput()
 	{
@@ -68,10 +69,10 @@ class JFormFieldZipCode extends JFormFieldText
 		    var ajaxReq = new Request(options).send();
 		};
 ENDSCRIPT;
-		
+
 		$doc = JFactory::getDocument();
 		$doc->addScriptDeclaration($script);
-		
+
 		$html = parent::getInput();
 
 		$html .= '<input type="button" onClick="getZip()" value="' . JText::_('JSEARCH_FILTER_SUBMIT') . '" />';
