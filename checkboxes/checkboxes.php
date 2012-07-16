@@ -88,7 +88,7 @@ class JFormFieldCheckboxes extends JFormFieldList
 	 *
 	 * @return  array  The field option objects.
 	 *
-	 * @since   11.1
+	 * @since   2.5
 	 */
 	protected function getOptions()
 	{
