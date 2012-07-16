@@ -1,7 +1,7 @@
 <?php
 /**
- * @package     Condos
- * @subpackage  com_condos
+ * @package     Hello
+ * @subpackage  com_hello
  * @copyright   Copyright (C) 2012 AtomTech, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
@@ -12,8 +12,8 @@ defined('JPATH_BASE') or die;
 /**
  * Displays options as a list of check boxes.
  *
- * @package     Condos
- * @subpackage  com_condos
+ * @package     Hello
+ * @subpackage  com_hello
  * @since       2.5
  */
 class JFormFieldCheckboxes extends JFormFieldList
