@@ -1,21 +1,21 @@
 <?php
 /**
- * @package     Products
- * @subpackage  com_products
+ * @package     Hello
+ * @subpackage  com_hello
  * @copyright   Copyright (C) 2012 AtomTech, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 // No direct access
-defined('_JEXEC') or die;
+defined('JPATH_BASE') or die;
 
 JFormHelper::loadFieldClass('list');
 
 /**
  * Form Field ZipCode class.
  *
- * @package     Products
- * @subpackage  com_products
+ * @package     Hello
+ * @subpackage  com_hello
  * @since       2.5
  */
 class JFormFieldZipCode extends JFormFieldText
@@ -23,7 +23,7 @@ class JFormFieldZipCode extends JFormFieldText
 	/**
 	 * The field type.
 	 *
-	 * @var		string
+	 * @var    string
 	 */
 	protected $type = 'ZipCode';
 
@@ -31,7 +31,7 @@ class JFormFieldZipCode extends JFormFieldText
 	 * Method to get the field input.
 	 *
 	 * @return  string The field input.
-	 * 
+	 *
 	 * @since   2.5
 	 */
 	public function getInput()
@@ -52,7 +52,7 @@ class JFormFieldZipCode extends JFormFieldText
 		            document.id('jform_state').value = responseJSON.uf;
 		        };
 		    var queryString = {
-		        'option': 'com_products',
+		        'option': 'com_hello',
 		        'task': 'clients.getzip',
 		        'zip': document.id('jform_zip_code').value,
 		        'format': 'raw'
